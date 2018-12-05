@@ -1,0 +1,459 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>reveal.js</title>
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/black.css">
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <link rel="stylesheet" media="all" href="//assets.slid.es/assets/application-a5d1fed025730b43a53d2d921fb8dd68c1098203d3a2b4cae1ddac2a6177bef3.css" />
+  <style>
+    .reveal pre code {
+      overflow: hidden;
+    }
+  </style>
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+
+        <section><img src="img/1_lpWLZ75HSCAYYQvx0wxYDQ.png" alt=""></section>
+        <section data-id="942ba6241dfee5587993227b49388b6e">
+          <div class="sl-block" data-block-type="text" data-block-id="a1e75db30dfc4a8c1c666f48c24e941d">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+              <p style="text-align: left;">Syntax</p>
+            </div>
+          </div>
+          <div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 404px; height: 417px; left: 40px; top: 173px;
+           font-size: 30px; display:inline-block; float:left" data-block-id="72f22a662c16c1051792534075c7c425">
+            <div class="sl-block-content" style="z-index: 8;">
+              <pre><code>// file.sass
+!primary-color= hotpink
+ 
+=border-radius(!radius)
+    -webkit-border-radius= !radius
+    -moz-border-radius= !radius
+    border-radius= !radius
+ 
+.my-element
+    color= !primary-color
+    width= 100%
+    overflow= hidden
+ 
+.my-other-element
+    +border-radius(5px)
+
+</code></pre>
+            </div>
+          </div>
+          <div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 404px; height: 417px; left: 518px; top: 173px; font-size: 30px; display:inline-block; float:left" data-block-id="7582e67745e9b1ae1a663dc540320f17">
+            <div class="sl-block-content" style="z-index: 13;">
+              <pre><code>// file.scss
+$primary-color: hotpink;
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+ 
+.my-element {
+    color: $primary-color;
+    width: 100%;
+    overflow: hidden;
+}
+ 
+.my-other-element {
+    @include border-radius(5px);
+}
+              </code></pre>
+            </div>
+          </div>
+        </section>
+
+      </section>
+
+      <section class="stack" data-id="ed4a774b19ab0a17df7c85b941b1617a">
+        <section>
+          <h2>Variables</h2>
+          <p>It is a way to store information that you want to reuse throughout your stylesheet.</p>
+
+        </section>
+        <section data-id="942ba6241dfee5587993227b49388b6e">
+          <div class="sl-block" data-block-type="text" data-block-id="a1e75db30dfc4a8c1c666f48c24e941d">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+              <p style="text-align: left;">Variables</p>
+            </div>
+          </div>
+          <div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 404px; height: 317px; left: 40px; top: 173px;
+           font-size: 30px; display:inline-block; float:left" data-block-id="72f22a662c16c1051792534075c7c425">
+            <div class="sl-block-content" style="z-index: 8;">
+              <pre><code>
+$body-bg: #cc0000;
+$body-color: #ffffff;
+$link-color: darkblue;
+
+body {
+ color: $body-color;
+ background-color: $body-bg;
+}
+a {
+ color: $link-color;
+}
+
+</code></pre>
+            </div>
+          </div>
+          <div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 404px; height: 317px; left: 518px; top: 173px; font-size: 30px; display:inline-block; float:left" data-block-id="7582e67745e9b1ae1a663dc540320f17">
+            <div class="sl-block-content" style="z-index: 13;">
+              <pre><code>
+body {
+  color: #ffffff;
+  background-color: #cc0000;
+}
+
+a {
+  color: darkblue;
+}
+              </code></pre>
+            </div>
+          </div>
+        </section>
+
+      </section>
+      <section class="stack" data-id="ed4a774b19ab0a17df7c85b941b1617a">
+
+        <section data-id="942ba6241dfee5587993227b49388b6e">
+          <div class="sl-block" data-block-type="text" data-block-id="a1e75db30dfc4a8c1c666f48c24e941d">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+              <p style="text-align: left;">Nesting</p>
+            </div>
+          </div>
+          <div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 404px; height: 417px; left: 40px; top: 133px;
+           font-size: 30px; display:inline-block; float:left; display:inline-block; float:left" data-block-id="72f22a662c16c1051792534075c7c425">
+            <div class="sl-block-content" style="z-index: 8;">
+              <pre><code>
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+</code></pre>
+            </div>
+          </div>
+          <div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 404px; height: 427px; left: 518px; top: 133px; font-size: 30px;display:inline-block; float:left" data-block-id="7582e67745e9b1ae1a663dc540320f17">
+            <div class="sl-block-content" style="z-index: 13;">
+              <pre><code>
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+              </code></pre>
+            </div>
+          </div>
+        </section>
+        <section data-id="942ba6241dfee5587993227b49388b6e">
+          <div class="sl-block" data-block-type="text" data-block-id="a1e75db30dfc4a8c1c666f48c24e941d">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+              <p style="text-align: left;">Referencing Parent Selectors: &amp;</p>
+            </div>
+          </div>
+          <div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 404px; height: 317px; left: 40px; top: 173px;
+           font-size: 30px; display:inline-block; float:left" data-block-id="72f22a662c16c1051792534075c7c425">
+            <div class="sl-block-content" style="z-index: 8;">
+              <pre><code>
+a {
+  font-weight: bold;
+  text-decoration: none;
+  &amp;:hover { text-decoration: underline; }
+  body.firefox &amp; { font-weight: normal; }
+}
+
+</code></pre>
+            </div>
+          </div>
+          <div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 404px; height: 317px; left: 518px; top: 173px; font-size: 30px; display:inline-block; float:left" data-block-id="7582e67745e9b1ae1a663dc540320f17">
+            <div class="sl-block-content" style="z-index: 13;">
+              <pre><code>
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+body.firefox a {
+  font-weight: normal;
+}
+              </code></pre>
+            </div>
+          </div>
+        </section>
+        <section data-id="942ba6241dfee5587993227b49388b6e">
+          <div class="sl-block" data-block-type="text" data-block-id="a1e75db30dfc4a8c1c666f48c24e941d">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+              <p style="text-align: left;">Nested Properties</p>
+            </div>
+          </div>
+          <div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 404px; height: 317px; left: 40px; top: 173px;
+           font-size: 30px; display:inline-block; float:left" data-block-id="72f22a662c16c1051792534075c7c425">
+            <div class="sl-block-content" style="z-index: 8;">
+              <pre><code>
+.sidebar {
+  font: {
+    family: fantasy;
+    size: 30em;
+    weight: bold;
+  }
+}
+
+</code></pre>
+            </div>
+          </div>
+          <div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 404px; height: 317px; left: 518px; top: 173px; font-size: 30px; display:inline-block; float:left" data-block-id="7582e67745e9b1ae1a663dc540320f17">
+            <div class="sl-block-content" style="z-index: 13;">
+              <pre><code>
+.sidebar {
+  font-family: fantasy;
+  font-size: 30em;
+  font-weight: bold;
+}
+              </code></pre>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section data-id="942ba6241dfee5587993227b49388b6e">
+        <div class="sl-block" data-block-type="text" data-block-id="a1e75db30dfc4a8c1c666f48c24e941d">
+          <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+            <p style="text-align: left;">Import</p>
+          </div>
+        </div>
+        <div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 404px; height: 317px; left: 40px; top: 173px;
+           font-size: 30px; display:inline-block; float:left" data-block-id="72f22a662c16c1051792534075c7c425">
+          <div class="sl-block-content" style="z-index: 8;">
+            <pre><code>
+// _reset.scss
+
+html,
+body,
+ul,
+ol {
+  margin:  0;
+  padding: 0;
+}
+
+</code></pre>
+          </div>
+        </div>
+        <div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 404px; height: 317px; left: 518px; top: 173px; font-size: 30px;display:inline-block; float:left" data-block-id="7582e67745e9b1ae1a663dc540320f17">
+          <div class="sl-block-content" style="z-index: 13;">
+            <pre><code>
+// base.scss
+
+@import 'reset';
+
+body {
+  font: 100% Helvetica, sans-serif;
+  background-color: #efefef;
+}
+              </code></pre>
+          </div>
+        </div>
+      </section>
+      <section data-id="942ba6241dfee5587993227b49388b6e">
+        <div class="sl-block" data-block-type="text" data-block-id="a1e75db30dfc4a8c1c666f48c24e941d">
+          <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+            <p style="text-align: left;">Mixins</p>
+          </div>
+        </div>
+        <pre style="top: 60px;"><code class="hljs" data-trim contenteditable>
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+.box { @include transform(rotate(30deg)); }
+					</code></pre>
+
+
+      </section>
+
+      <section data-id="942ba6241dfee5587993227b49388b6e">
+
+        <section data-id="942ba6241dfee5587993227b49388b6e">
+          <div class="sl-block" data-block-type="text" data-block-id="a1e75db30dfc4a8c1c666f48c24e941d">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+              <p style="text-align: left;">Extend/Inheritance</p>
+            </div>
+          </div>
+          <div class="sl-block" data-block-type="code" style="min-width: 30px; width: 404px; height: 417px; left: 40px; top: 153px;
+           font-size: 30px; display:inline-block; float:left; overflow: hidden;" data-block-id="72f22a662c16c1051792534075c7c425">
+            <div class="sl-block-content" style="z-index: 8;">
+              <pre><code>
+%message-shared {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.message {
+  @extend %message-shared;
+}
+
+.success {
+  @extend %message-shared;
+  border-color: green;
+}
+
+.error {
+  @extend %message-shared;
+  border-color: red;
+}
+
+</code></pre>
+            </div>
+          </div>
+          <div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 404px; height: 400px; left: 518px; top: 153px; font-size: 30px;display:inline-block; float:left" data-block-id="7582e67745e9b1ae1a663dc540320f17">
+            <div class="sl-block-content" style="z-index: 13;">
+              <pre><code style="overflow: hidden;">
+.error, .success, .message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  border-color: green;
+}
+
+.error {
+  border-color: red;
+}
+              </code></pre>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section data-id="942ba6241dfee5587993227b49388b6e">
+        <div class="sl-block" data-block-type="text" data-block-id="a1e75db30dfc4a8c1c666f48c24e941d">
+          <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+            <p style="text-align: left;">Extend/Inheritance</p>
+          </div>
+        </div>
+        <div class="sl-block" data-block-type="code" style="min-width: 30px; width: 404px; height: 417px; left: 40px; top: 153px;
+           font-size: 30px; display:inline-block; float:left; overflow: hidden;" data-block-id="72f22a662c16c1051792534075c7c425">
+          <div class="sl-block-content" style="z-index: 8;">
+            <pre><code>
+.container {
+  width: 100%;
+}
+
+article[role="main"] {
+  float: left;
+  width: 600px / 960px * 100%;
+}
+
+aside[role="complementary"] {
+  float: right;
+  width: 300px / 960px * 100%;
+}
+
+</code></pre>
+          </div>
+        </div>
+        <div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 404px; height: 400px; left: 518px; top: 153px; font-size: 30px;display:inline-block; float:left" data-block-id="7582e67745e9b1ae1a663dc540320f17">
+          <div class="sl-block-content" style="z-index: 13;">
+            <pre><code style="overflow: hidden;">
+.container {
+  width: 100%;
+}
+
+article[role="main"] {
+  float: left;
+  width: 62.5%;
+}
+
+aside[role="complementary"] {
+  float: right;
+  width: 31.25%;
+}
+              </code></pre>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      dependencies: [{
+          src: 'plugin/markdown/marked.js'
+        },
+        {
+          src: 'plugin/markdown/markdown.js'
+        },
+        {
+          src: 'plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: 'plugin/highlight/highlight.js',
+          async: true,
+          callback: function() {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+</body>
+
+</html>
